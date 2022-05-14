@@ -15,11 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.apps import AppConfig
-
-class BlogConfig(AppConfig):
-    default_auto_field = 'django.db.models.AutoField'
-    name = 'Blog'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
